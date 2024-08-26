@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify, send_from_directory
 from logic import Game
 
-app = Flask(__name__, static_folder='game_server', static_url_path='')
+app = Flask(__name__, static_folder='client', static_url_path='')
 
 game_instance = Game()
 
